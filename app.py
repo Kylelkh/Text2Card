@@ -184,7 +184,7 @@ def chat_completions():
         output_path = os.path.join(config.UPLOAD_FOLDER, output_filename)
 
         # 调用图片生成函数
-        from image_generator import generate_image
+        from generate_image import generate_image
         generate_image(last_message, output_path)
 
         # 验证图片生成是否成功
